@@ -1,0 +1,97 @@
+:root, [data-theme="dark"] {
+    --bg: #080808;
+    --bg-alt: #0e0e0e;
+    --card: rgba(18, 18, 18, 0.8);
+    --card-solid: #121212;
+    --border: rgba(255, 255, 255, 0.06);
+    --text: #f0f0f0;
+    --text-secondary: #777777;
+    --accent: #ef4444;
+    --accent-glow: rgba(239, 68, 68, 0.2);
+    --pink: #f87171;
+    --gradient: linear-gradient(135deg, #ef4444, #dc2626);
+    --glass: rgba(255, 255, 255, 0.03);
+    --glass-border: rgba(255, 255, 255, 0.08);
+}
+
+[data-theme="light"] {
+    --bg: #fafafa;
+    --bg-alt: #f0f0f0;
+    --card: rgba(255, 255, 255, 0.85);
+    --card-solid: #ffffff;
+    --border: rgba(0, 0, 0, 0.08);
+    --text: #111111;
+    --text-secondary: #666666;
+    --accent: #dc2626;
+    --accent-glow: rgba(220, 38, 38, 0.12);
+    --gradient: linear-gradient(135deg, #ef4444, #b91c1c);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+::selection {
+    background: var(--accent);
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+
+.section-title {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 52px;
+    font-size: 0.95rem;
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
