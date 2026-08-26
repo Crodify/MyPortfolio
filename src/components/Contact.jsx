@@ -37,7 +37,11 @@ export default function Contact() {
                 <h2 className="section-title reveal">Get In Touch</h2>
                 <p className="section-subtitle reveal reveal-delay-1">Have a project in mind? Let's work together!</p>
                 <div className="contact-grid">
-                    <form className="contact-form reveal reveal-delay-2" onSubmit={handleSubmit}>
+                    <form className="contact-form reveal reveal-delay-2" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit}>
+                        <input type="hidden" name="form-name" value="contact" />
+                        <p className="hidden" style={{display:'none'}}>
+                            <label>Don't fill this out: <input name="bot-field" /></label>
+                        </p>
                         <div className="form-group">
                             <label>Your Name</label>
                             <input
