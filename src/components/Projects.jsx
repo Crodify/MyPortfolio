@@ -69,6 +69,15 @@ export default function Projects() {
                 <div className="projects-grid">
                     {filtered.filter(p => !p.featured).map((project, i) => (
                         <div key={project.id} className={`project-card reveal reveal-delay-${(i % 3) + 1}`}>
+                            {project.screenshot && (
+                                <div className="project-screenshot">
+                                    <img src={project.screenshot} alt={project.title} loading="lazy" />
+                                    <div className="screenshot-overlay">
+                                        {project.live && <a href={project.live} target="_blank" rel="noreferrer" className="overlay-btn">Live Demo →</a>}
+                                        {project.github && <a href={project.github} target="_blank" rel="noreferrer" className="overlay-btn">GitHub →</a>}
+                                    </div>
+                                </div>
+                            )}
                             <div className="project-header">
                                 <span className="project-icon">{project.icon}</span>
                                 <h3>{project.title}</h3>

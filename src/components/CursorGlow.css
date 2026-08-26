@@ -1,0 +1,41 @@
+.cursor-glow {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(239, 68, 68, 0.08) 0%, transparent 70%);
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9998;
+    transition: width 0.2s, height 0.2s, background 0.2s;
+}
+
+.cursor-glow.clicking {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(239, 68, 68, 0.15) 0%, transparent 70%);
+}
+
+.cursor-ring {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    border: 2px solid rgba(239, 68, 68, 0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9998;
+    transition: width 0.15s ease, height 0.15s ease, border-color 0.15s ease;
+}
+
+.cursor-ring.clicking {
+    width: 32px;
+    height: 32px;
+    border-color: rgba(239, 68, 68, 0.8);
+}
+
+@media (max-width: 768px) {
+    .cursor-glow, .cursor-ring {
+        display: none;
+    }
+}

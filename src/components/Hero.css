@@ -252,3 +252,26 @@
     .stat-number { font-size: 1.4rem; }
     .stat-divider { height: 30px; }
 }
+
+.btn-resume {
+    background: transparent;
+    color: var(--text);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.btn-resume:hover {
+    transform: translateY(-2px);
+    border-color: rgba(239, 68, 68, 0.4);
+    background: rgba(239, 68, 68, 0.08);
+    color: var(--accent);
+}
+
+.btn-resume svg {
+    transition: transform 0.3s;
+}
+
+.btn-resume:hover svg {
+    transform: translateY(2px);
+}
