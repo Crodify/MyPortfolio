@@ -21,6 +21,7 @@ export const resumeData = {
         Tools: ['Git & GitHub', 'VS Code', 'Firebase Database', 'MongoDB', 'Netlify', 'Render', 'Chrome API', 'AI-Assisted Tools']
     },
     projects: [
+        { name: 'BerserkLifts', tech: 'React Native, Expo, TypeScript, Zustand, Supabase', desc: 'Full-featured workout & habit tracker with RPG progression, cloud sync, XP system, and leaderboards.' },
         { name: 'Weather Dashboard', tech: 'HTML5, CSS3, JavaScript, PWA, REST API', desc: 'Real-time weather app with auto-location, hourly/7-day forecasts, and ambient sounds. PWA installable.' },
         { name: 'Myntra Clone', tech: 'React Native, TypeScript, Node.js, Expo', desc: 'Full-stack e-commerce clone with backend API, authentication, and real-time features.' },
         { name: 'Leads Tracker', tech: 'JavaScript, Firebase, HTML5, CSS3', desc: 'Mobile-first leads tracking app with Firebase backend.' },

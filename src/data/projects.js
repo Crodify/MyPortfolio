@@ -1,12 +1,22 @@
 export const projects = [
     {
+        id: 0,
+        title: 'BerserkLifts',
+        description: 'Full-featured workout & habit tracker with RPG progression, cloud sync, XP system, leaderboards, and challenges. Built with React Native, Expo, TypeScript, Zustand, and Supabase.',
+        tech: ['React Native', 'Expo', 'TypeScript', 'Zustand', 'Supabase', 'Node.js'],
+        live: 'https://dist-89sr5vj5d-crodify-6096.vercel.app',
+        github: 'https://github.com/Crodify/BerserkLifts-workout-habit-tracker',
+        featured: true,
+        icon: '⚔️'
+    },
+    {
         id: 1,
         title: 'Weather Dashboard',
         description: 'Real-time weather app with Pinterest-style UI, auto-location detection, hourly/7-day forecasts, and ambient weather sounds. PWA installable on iPhone.',
         tech: ['HTML5', 'CSS3', 'JavaScript', 'PWA', 'REST API'],
         live: 'https://weathercrodify.netlify.app',
         github: 'https://github.com/Crodify/weather-dashboard',
-        featured: true,
+        featured: false,
         icon: '🌤️'
     },
     {
