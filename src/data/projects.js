@@ -4,7 +4,7 @@ export const projects = [
         title: 'BerserkLifts',
         description: 'Full-featured workout & habit tracker with RPG progression, cloud sync, XP system, leaderboards, and challenges. Built with React Native, Expo, TypeScript, Zustand, and Supabase.',
         tech: ['React Native', 'Expo', 'TypeScript', 'Zustand', 'Supabase', 'Node.js'],
-        live: 'https://heroic-dasik-fd4181.netlify.app',
+        live: 'https://crodify.github.io/BerserkLifts-workout-habit-tracker',
         github: 'https://github.com/Crodify/BerserkLifts-workout-habit-tracker',
         featured: true,
         icon: '⚔️'
