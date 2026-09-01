@@ -26,14 +26,15 @@ const skillGroups = [
         ]
     },
     {
-        title: 'Backend',
+        title: 'Backend & Mobile',
         icon: '⚙️',
         skills: [
             { name: 'Node.js', level: 65 },
             { name: 'Express.js', level: 60 },
             { name: 'REST APIs', level: 70 },
-            { name: 'Socket.io', level: 55 },
-            { name: 'Authentication (JWT)', level: 60 },
+            { name: 'React Native', level: 70 },
+            { name: 'TypeScript', level: 65 },
+            { name: 'Supabase', level: 70 },
         ]
     },
     {
@@ -43,11 +44,11 @@ const skillGroups = [
             { name: 'Git & GitHub', level: 80 },
             { name: 'VS Code', level: 90 },
             { name: 'Firebase Database', level: 65 },
-            { name: 'MongoDB', level: 60 },
-            { name: 'Netlify', level: 75 },
-            { name: 'Render', level: 65 },
-            { name: 'AI-Assisted Tools', level: 80 },
-            { name: 'AI Agents', level: 60 },
+            { name: 'Zustand', level: 65 },
+            { name: 'Netlify & Vercel', level: 75 },
+            { name: 'Expo (React Native)', level: 70 },
+            { name: 'AI-Assisted Dev', level: 85 },
+            { name: 'AI Agents & Automation', level: 65 },
         ]
     }
 ];

@@ -1,7 +1,7 @@
 export const profile = {
     name: 'Ranveer',
     fullName: 'Ranveer Singh Bhatia',
-    title: 'Frontend Developer',
+    title: 'Full Stack Developer',
     tagline: 'I build responsive, user-friendly web experiences with HTML, CSS, and JavaScript.',
     location: 'India',
     status: 'Open to opportunities',
@@ -14,7 +14,7 @@ export const profile = {
         suffix: '— I build things for the web.',
     },
     bio: [
-        'I'm a frontend developer passionate about creating beautiful, responsive web applications. I love turning complex problems into simple, elegant solutions.',
+        'I'm a full stack developer passionate about building complete web applications — from pixel-perfect UIs to cloud-synced backends. I love turning complex problems into elegant solutions.',
         'Currently learning through Scrimba and building projects to sharpen my skills. Every project teaches me something new about web development.',
     ],
     stats: [
@@ -43,7 +43,7 @@ export const projects = [
         title: 'Weather Dashboard',
         description: 'Real-time weather app with Pinterest-style UI, auto-location detection, hourly & 7-day forecasts, and ambient sounds.',
         tech: ['HTML', 'CSS', 'JavaScript', 'API', 'PWA'],
-        liveUrl: 'https://weather-dashboard-crodify.netlify.app/',
+        liveUrl: 'https://weathercrodify.netlify.app/',
         githubUrl: 'https://github.com/Crodify/weather-dashboard',
         featured: true,
         gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',

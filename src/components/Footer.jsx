@@ -12,7 +12,7 @@ export default function Footer() {
                         <a href="https://linkedin.com/in/crodify" target="_blank" rel="noreferrer">LinkedIn</a>
                         <a href="https://github.com/Crodify" target="_blank" rel="noreferrer">GitHub</a>
                     </div>
-                    <p className="footer-copy">© 2025 Ranveer. All rights reserved.</p>
+                    <p className="footer-copy">© 2026 Ranveer. All rights reserved.</p>
                 </div>
             </div>
         </footer>

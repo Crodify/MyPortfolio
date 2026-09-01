@@ -4,27 +4,27 @@ import './Experience.css';
 const experiences = [
     {
         period: 'Aug 2026',
-        title: 'Weather Dashboard & Myntra Clone',
-        org: 'Personal Projects',
-        desc: 'Built a real-time weather app with API integration and PWA support. Cloned Myntra using React.'
+        title: 'BerserkLifts — Workout & Habit Tracker',
+        org: 'Full Stack Project',
+        desc: 'Built a complete React Native app with Supabase auth, cloud sync, XP system, leaderboards, and drag-and-drop routines.'
     },
     {
         period: 'Aug 2026',
+        title: 'Weather Dashboard & Myntra Clone',
+        org: 'Personal Projects',
+        desc: 'Built a real-time weather app with API integration and PWA support. Cloned Myntra with backend API and auth.'
+    },
+    {
+        period: 'Jul 2026',
         title: 'Leads Tracker & Chrome Extension',
         org: 'Personal Projects',
         desc: 'Created a mobile-first leads app with Firebase and a Chrome tab manager extension.'
     },
     {
-        period: 'Jul 2026',
+        period: 'Jun 2026',
         title: 'Blackjack Game & Password Generator',
         org: 'Personal Projects',
         desc: 'Built a full Blackjack card game with betting system and a secure password generator.'
-    },
-    {
-        period: 'Jun 2026',
-        title: 'Counter & Score Apps',
-        org: 'Personal Projects',
-        desc: 'Developed animated counter and basketball score counter components with JavaScript.'
     },
     {
         period: 'Mar 2026',
@@ -36,7 +36,7 @@ const experiences = [
         period: 'Feb 2026',
         title: 'Started Learning Web Dev',
         org: 'Scrimba',
-        desc: 'Began the Frontend Developer Career Path. Learned HTML, CSS, and JavaScript fundamentals. Built first projects: SpaceX clone, business card, and self-introduction page.'
+        desc: 'Began the Frontend Developer Career Path. Learned HTML, CSS, and JavaScript fundamentals. Built first projects.'
     }
 ];
 
