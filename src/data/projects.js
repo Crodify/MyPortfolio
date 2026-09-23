@@ -10,6 +10,16 @@ export const projects = [
         icon: '⚔️'
     },
     {
+        id: 12,
+        title: 'Chef Claude',
+        description: 'AI recipe generator that turns your ingredients into full recipes. Secured with a Vercel serverless proxy so API keys never reach the browser.',
+        tech: ['React', 'Vite', 'Vercel Functions', 'HuggingFace API'],
+        live: 'https://chef-claude-chi-two.vercel.app',
+        github: 'https://github.com/Crodify/Chef-Claude',
+        featured: false,
+        icon: '👨‍🍳'
+    },
+    {
         id: 1,
         title: 'Weather Dashboard',
         description: 'Real-time weather app with Pinterest-style UI, auto-location detection, hourly/7-day forecasts, and ambient weather sounds. PWA installable on iPhone.',
