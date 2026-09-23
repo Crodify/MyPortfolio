@@ -65,7 +65,7 @@ export const projects = [
         description: 'Full Blackjack card game with betting system, card animations, and score tracking.',
         tech: ['JavaScript', 'HTML5', 'CSS3'],
         live: 'https://crodify-blackjack.netlify.app',
-        github: '#',
+        github: 'https://github.com/Crodify/Blackjack---Javascript',
         featured: false,
         icon: '🃏'
     },
