@@ -78,7 +78,7 @@ export default function Hero() {
                 </p>
                 <div className="hero-stats reveal reveal-delay-3">
                     <div className="stat">
-                        <span className="stat-number">12+</span>
+                        <span className="stat-number">14+</span>
                         <span className="stat-label">Projects</span>
                     </div>
                     <div className="stat-divider" />

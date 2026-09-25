@@ -20,6 +20,16 @@ export const projects = [
         icon: '👨‍🍳'
     },
     {
+        id: 13,
+        title: 'Tenzies',
+        description: 'Classic dice game — roll until all 10 dice match, freeze the keepers between rolls, win with confetti. State management with React hooks and unique IDs via nanoid.',
+        tech: ['React', 'Vite', 'JavaScript'],
+        live: 'https://tenzies-react-js.vercel.app',
+        github: 'https://github.com/Crodify/Tenzies-ReactJS',
+        featured: false,
+        icon: '🎲'
+    },
+    {
         id: 1,
         title: 'Weather Dashboard',
         description: 'Real-time weather app with Pinterest-style UI, auto-location detection, hourly/7-day forecasts, and ambient weather sounds. PWA installable on iPhone.',

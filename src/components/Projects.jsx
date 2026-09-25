@@ -4,12 +4,12 @@ import './Projects.css';
 
 export default function Projects() {
     const [filter, setFilter] = useState('all');
-    const filters = ['all', 'JavaScript', 'HTML5', 'CSS3'];
+    const filters = ['all', 'React', 'JavaScript', 'HTML5', 'CSS3'];
     const ref = useRef(null);
 
     const filtered = filter === 'all'
         ? projects
-        : projects.filter(p => p.tech.includes(filter));
+        : projects.filter(p => p.tech.some(t => t.toLowerCase().includes(filter.toLowerCase())));
 
     const featured = projects.find(p => p.featured);
 

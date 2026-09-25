@@ -18,7 +18,7 @@ export const profile = {
         'Currently learning through Scrimba and building projects to sharpen my skills. Every project teaches me something new about web development.',
     ],
     stats: [
-        { label: 'Projects', value: 13 },
+        { label: 'Projects', value: 14 },
         { label: 'Technologies', value: 10 },
         { label: 'Months Coding', value: 6 },
     ],
