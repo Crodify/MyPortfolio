@@ -10,16 +10,6 @@ export const projects = [
         icon: '⚔️'
     },
     {
-        id: 12,
-        title: 'Chef Claude',
-        description: 'AI recipe generator that turns your ingredients into full recipes. Secured with a Vercel serverless proxy so API keys never reach the browser.',
-        tech: ['React', 'Vite', 'Vercel Functions', 'HuggingFace API'],
-        live: 'https://chef-claude-chi-two.vercel.app',
-        github: 'https://github.com/Crodify/Chef-Claude',
-        featured: false,
-        icon: '👨‍🍳'
-    },
-    {
         id: 13,
         title: 'Tenzies',
         description: 'Classic dice game — roll until all 10 dice match, freeze the keepers between rolls, win with confetti. State management with React hooks and unique IDs via nanoid.',
@@ -28,6 +18,16 @@ export const projects = [
         github: 'https://github.com/Crodify/Tenzies-ReactJS',
         featured: false,
         icon: '🎲'
+    },
+    {
+        id: 12,
+        title: 'Chef Claude',
+        description: 'AI recipe generator that turns your ingredients into full recipes. Secured with a Vercel serverless proxy so API keys never reach the browser.',
+        tech: ['React', 'Vite', 'Vercel Functions', 'HuggingFace API'],
+        live: 'https://chef-claude-chi-two.vercel.app',
+        github: 'https://github.com/Crodify/Chef-Claude',
+        featured: false,
+        icon: '👨‍🍳'
     },
     {
         id: 1,
