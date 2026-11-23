@@ -1,12 +1,22 @@
 export const projects = [
     {
+        id: 100,
+        title: 'GoodDollar Protocol Audit Fixes',
+        description: '3 security & architecture PRs merged into production by founder @sirpy on GoodDollar/antseed-integration: EIP-712 auth verification (#41), GraphQL keyset cursor pagination to bypass 5,000-entity cap (#40), and 6-decimal micro-USD precision (#36).',
+        tech: ['TypeScript', 'Cloudflare Workers', 'GraphQL', 'Web3', 'EVM'],
+        live: 'https://github.com/GoodDollar/antseed-integration/pull/36',
+        github: 'https://github.com/GoodDollar/antseed-integration/pulls?q=is%3Apr+author%3ACrodify',
+        featured: true,
+        icon: '🛡️'
+    },
+    {
         id: 0,
         title: 'BerserkLifts',
         description: 'Full-featured workout & habit tracker with RPG progression, cloud sync, XP system, leaderboards, and challenges. Built with React Native, Expo, TypeScript, Zustand, and Supabase.',
         tech: ['React Native', 'Expo', 'TypeScript', 'Zustand', 'Supabase', 'Node.js'],
         live: 'https://berserklifts.vercel.app',
         github: 'https://github.com/Crodify/BerserkLifts-workout-habit-tracker',
-        featured: true,
+        featured: false,
         icon: '⚔️'
     },
     {

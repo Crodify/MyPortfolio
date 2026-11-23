@@ -36,7 +36,7 @@ export async function generateResume() {
     // Title
     f(9);
     c(239, 68, 68);
-    doc.text('Frontend Developer', 14, sy);
+    doc.text(resumeData.title || 'Frontend & Web3 Developer', 14, sy);
     sy += 14;
 
     // Contact Section
@@ -60,7 +60,6 @@ export async function generateResume() {
         c(239, 68, 68);
         doc.text(ct.icon, 14, sy);
         c(180, 180, 180);
-        // wrap long text
         const lines = doc.splitTextToSize(ct.text, 48);
         doc.text(lines, 22, sy);
         sy += lines.length * 4 + 3;
@@ -78,7 +77,7 @@ export async function generateResume() {
     Object.entries(resumeData.skills).forEach(([cat, skills]) => {
         f(7, 'bold');
         c(255, 255, 255);
-        doc.text(cat, 14, sy);
+        doc.text(cat.replace('_', ' / '), 14, sy);
         sy += 5;
         f(6.5);
         c(170, 170, 170);
@@ -103,7 +102,7 @@ export async function generateResume() {
     doc.text('Hindi — Native', 14, sy); sy += 14;
 
     // === MAIN CONTENT (right side) ===
-    let my = 25;
+    let my = 22;
 
     // Summary
     f(10, 'bold');
@@ -111,87 +110,99 @@ export async function generateResume() {
     doc.text('PROFESSIONAL SUMMARY', 82, my);
     my += 2;
     line(82, my, 190, my);
-    my += 7;
-    f(8);
+    my += 6;
+    f(7.5);
     c(50, 50, 50);
     const sumLines = doc.splitTextToSize(resumeData.summary, cW - 10);
     doc.text(sumLines, 82, my);
-    my += sumLines.length * 4 + 8;
+    my += sumLines.length * 3.8 + 6;
 
-    // Experience / Projects
+    // Work Experience
+    if (resumeData.experience && resumeData.experience.length > 0) {
+        f(10, 'bold');
+        c(239, 68, 68);
+        doc.text('WORK EXPERIENCE', 82, my);
+        my += 2;
+        line(82, my, 190, my);
+        my += 6;
+
+        resumeData.experience.forEach(exp => {
+            f(8, 'bold');
+            c(20, 20, 20);
+            doc.text(exp.role, 88, my);
+            f(7);
+            c(120, 120, 120);
+            doc.text(exp.period, 190, my, { align: 'right' });
+            my += 4;
+
+            f(7, 'bold');
+            c(239, 68, 68);
+            doc.text(exp.company, 88, my);
+            my += 3.5;
+
+            f(7);
+            c(70, 70, 70);
+            const expLines = doc.splitTextToSize(exp.details, cW - 10);
+            doc.text(expLines, 88, my);
+            my += expLines.length * 3.5 + 4;
+        });
+        my += 2;
+    }
+
+    // Projects
     f(10, 'bold');
     c(239, 68, 68);
-    doc.text('PROJECTS', 82, my);
+    doc.text('KEY PROJECTS', 82, my);
     my += 2;
     line(82, my, 190, my);
-    my += 7;
+    my += 6;
 
-    resumeData.projects.forEach((proj, idx) => {
-        checkPage(20);
+    resumeData.projects.slice(0, 5).forEach((proj) => {
         // Red bullet
         doc.setFillColor(239, 68, 68);
-        doc.circle(84, my - 1.5, 1.2, 'F');
+        doc.circle(84, my - 1.5, 1.1, 'F');
 
-        f(8, 'bold');
+        f(7.5, 'bold');
         c(20, 20, 20);
         doc.text(proj.name, 88, my);
-        my += 4;
+        my += 3.5;
 
         // Tech stack
         f(6.5);
         c(239, 68, 68);
         doc.text(proj.tech, 88, my);
-        my += 4;
+        my += 3.5;
 
         // Description
-        f(7.5);
+        f(7);
         c(80, 80, 80);
         const dLines = doc.splitTextToSize(proj.desc, cW - 10);
         doc.text(dLines, 88, my);
-        my += dLines.length * 3.5 + 4;
+        my += dLines.length * 3.3 + 3.5;
     });
-    my += 4;
+    my += 2;
 
     // Education
-    checkPage(25);
     f(10, 'bold');
     c(239, 68, 68);
-    doc.text('EDUCATION', 82, my);
+    doc.text('EDUCATION & CERTIFICATIONS', 82, my);
     my += 2;
     line(82, my, 190, my);
-    my += 7;
+    my += 6;
 
     resumeData.education.forEach(edu => {
-        f(8, 'bold');
+        f(7.5, 'bold');
         c(20, 20, 20);
         doc.text(edu.degree, 88, my);
-        f(7);
+        f(6.5);
         c(120, 120, 120);
         doc.text(edu.period, 190, my, { align: 'right' });
-        my += 4;
-        f(7.5);
-        c(80, 80, 80);
+        my += 3.5;
+        f(7);
+        c(70, 70, 70);
         doc.text(edu.school, 88, my);
         my += 4;
-        const eLines = doc.splitTextToSize(edu.details, cW - 10);
-        doc.text(eLines, 88, my);
-        my += eLines.length * 3.5 + 4;
     });
-
-    // Certifications
-    checkPage(20);
-    my += 4;
-    f(10, 'bold');
-    c(239, 68, 68);
-    doc.text('CERTIFICATIONS', 82, my);
-    my += 2;
-    line(82, my, 190, my);
-    my += 7;
-    f(7.5);
-    c(50, 50, 50);
-    doc.text('• Frontend Developer Career Path — Scrimba', 88, my); my += 5;
-    doc.text('• HTML & CSS — Scrimba', 88, my); my += 5;
-    doc.text('• JavaScript — Scrimba', 88, my);
 
     addFooter();
 
@@ -199,12 +210,12 @@ export async function generateResume() {
 
     function addFooter() {
         doc.setFillColor(239, 68, 68);
-        doc.rect(0, H - 10, W, 10, 'F');
+        doc.rect(0, H - 8, W, 8, 'F');
         f(6);
         c(255, 255, 255);
         doc.text(
             'Ranveer Singh Bhatia  •  singhbhatiaranveer@gmail.com  •  ' + resumeData.website,
-            W / 2, H - 4, { align: 'center' }
+            W / 2, H - 3, { align: 'center' }
         );
     }
 }

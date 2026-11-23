@@ -3,16 +3,28 @@ import './Experience.css';
 
 const experiences = [
     {
+        period: 'Nov 2026 — Present',
+        title: 'Web Development Intern',
+        org: 'Nexxoury Solutions',
+        desc: 'Building responsive web interfaces, optimizing UI performance, and developing client-facing web applications using modern frontend frameworks and clean design systems.'
+    },
+    {
+        period: 'Oct 2026 — Present',
+        title: 'Open Source Software Contributor',
+        org: 'GoodDollar, Algorand & Tenstorrent',
+        desc: 'Authored and merged 3 production security & architectural audit PRs on GoodDollar (antseed-integration) approved by founder @sirpy: EIP-712 signature verification (#41), GraphQL keyset pagination (#40), and 6-decimal configs (#36). Contributed 5+ SDK PRs to Algorand.'
+    },
+    {
         period: 'Aug 2026',
         title: 'BerserkLifts — Workout & Habit Tracker',
         org: 'Full Stack Project',
         desc: 'Built a complete React Native app with Supabase auth, cloud sync, XP system, leaderboards, and drag-and-drop routines.'
     },
     {
-        period: 'Aug 2026',
-        title: 'Weather Dashboard & Myntra Clone',
-        org: 'Personal Projects',
-        desc: 'Built a real-time weather app with API integration and PWA support. Cloned Myntra with backend API and auth.'
+        period: 'Jul 2026 — Aug 2026',
+        title: 'Full-Stack Web Development Intern',
+        org: 'Elevance Skills',
+        desc: 'Completed a certified project-based curriculum covering React Native, Expo, and backend API integration. Built and shipped the Myntra Clone.'
     },
     {
         period: 'Jul 2026',
@@ -21,22 +33,10 @@ const experiences = [
         desc: 'Created a mobile-first leads app with Firebase and a Chrome tab manager extension.'
     },
     {
-        period: 'Jun 2026',
-        title: 'Blackjack Game & Password Generator',
-        org: 'Personal Projects',
-        desc: 'Built a full Blackjack card game with betting system and a secure password generator.'
-    },
-    {
-        period: 'Mar 2026',
-        title: 'Dream Place & Birthday Card',
-        org: 'Personal Projects',
-        desc: 'Created a tourist website with responsive design and an animated birthday greeting card.'
-    },
-    {
-        period: 'Feb 2026',
-        title: 'Started Learning Web Dev',
+        period: 'Feb 2026 — Aug 2026',
+        title: 'Frontend Developer Career Path',
         org: 'Scrimba',
-        desc: 'Began the Frontend Developer Career Path. Learned HTML, CSS, and JavaScript fundamentals. Built first projects.'
+        desc: 'Completed comprehensive course covering HTML5, CSS3, JavaScript, React, Responsive Design, and Web Accessibility. Built 12+ production projects.'
     }
 ];
 
@@ -61,7 +61,7 @@ export default function Experience() {
         <section className="experience-section" id="experience" ref={ref}>
             <div className="container">
                 <h2 className="section-title reveal">My Journey</h2>
-                <p className="section-subtitle reveal reveal-delay-1">The path that brought me to where I am today</p>
+                <p className="section-subtitle reveal reveal-delay-1">The path of real-world projects and engineering growth</p>
                 <div className="timeline">
                     {experiences.map((exp, i) => (
                         <div key={i} className={`timeline-item reveal reveal-delay-${(i % 3) + 1}`}>

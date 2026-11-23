@@ -1,9 +1,9 @@
 export const profile = {
     name: 'Ranveer',
     fullName: 'Ranveer Singh Bhatia',
-    title: 'Full Stack Developer',
-    tagline: 'I build responsive, user-friendly web experiences with HTML, CSS, and JavaScript.',
-    location: 'India',
+    title: 'Frontend & Web3 Developer',
+    tagline: 'I build high-performance web applications, modern responsive UIs, and production open-source solutions.',
+    location: 'Vadodara, India',
     status: 'Open to opportunities',
     email: 'singhbhatiaranveer@gmail.com',
     github: 'https://github.com/Crodify',
@@ -14,30 +14,40 @@ export const profile = {
         suffix: '— I build things for the web.',
     },
     bio: [
-        'I'm a full stack developer passionate about building complete web applications — from pixel-perfect UIs to cloud-synced backends. I love turning complex problems into elegant solutions.',
-        'Currently learning through Scrimba and building projects to sharpen my skills. Every project teaches me something new about web development.',
+        'I am a Frontend & Web3 Developer currently working as a Web Development Intern at Nexxoury Solutions. I specialize in building responsive, accessible, and high-performance interfaces using React, TypeScript, and modern JavaScript.',
+        'Active open-source contributor with 3 production security & architectural audit PRs merged on GoodDollar (approved by founder @sirpy), alongside contributions across Algorand and Tenstorrent. Passionate about AI-assisted engineering and shipping reliable software fast.',
     ],
     stats: [
-        { label: 'Projects', value: 14 },
-        { label: 'Technologies', value: 10 },
-        { label: 'Months Coding', value: 6 },
+        { label: 'Merged Bounties & PRs', value: 3 },
+        { label: 'Projects Shipped', value: 15 },
+        { label: 'Technologies', value: 12 },
     ],
 };
 
 export const skills = [
-    { name: 'HTML5', icon: '🌐', level: 90 },
-    { name: 'CSS3', icon: '🎨', level: 85 },
-    { name: 'JavaScript', icon: '⚡', level: 80 },
-    { name: 'React', icon: '⚛️', level: 70 },
-    { name: 'Responsive Design', icon: '📱', level: 90 },
-    { name: 'Chrome API', icon: '🔧', level: 75 },
-    { name: 'Firebase', icon: '🗄️', level: 70 },
-    { name: 'Python', icon: '🐍', level: 60 },
-    { name: 'Git & GitHub', icon: '📦', level: 80 },
-    { name: 'VS Code', icon: '🛠️', level: 90 },
+    { name: 'React.js', icon: '⚛️', level: 90 },
+    { name: 'TypeScript', icon: '🔷', level: 85 },
+    { name: 'JavaScript (ES6+)', icon: '⚡', level: 90 },
+    { name: 'HTML5 & CSS3', icon: '🎨', level: 95 },
+    { name: 'Responsive UI / Tailwind', icon: '📱', level: 92 },
+    { name: 'Web3 / EVM (MetaMask/Celo)', icon: '🔗', level: 80 },
+    { name: 'Node.js & REST APIs', icon: '🌐', level: 80 },
+    { name: 'GraphQL & Cloudflare Workers', icon: '☁️', level: 75 },
+    { name: 'Git & GitHub Workflows', icon: '📦', level: 90 },
+    { name: 'AI-Assisted Engineering', icon: '🤖', level: 95 },
 ];
 
 export const projects = [
+    {
+        id: 100,
+        title: 'GoodDollar Protocol Audit Fixes',
+        description: '3 security & architecture PRs merged into production by founder @sirpy on GoodDollar/antseed-integration: EIP-712 auth verification (#41), GraphQL keyset cursor pagination (#40), and 6-decimal micro-USD precision (#36).',
+        tech: ['TypeScript', 'Cloudflare Workers', 'GraphQL', 'Web3', 'EVM'],
+        liveUrl: 'https://github.com/GoodDollar/antseed-integration/pull/36',
+        githubUrl: 'https://github.com/GoodDollar/antseed-integration/pulls?q=is%3Apr+author%3ACrodify',
+        featured: true,
+        gradient: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
+    },
     {
         id: 1,
         title: 'Weather Dashboard',
@@ -45,7 +55,7 @@ export const projects = [
         tech: ['HTML', 'CSS', 'JavaScript', 'API', 'PWA'],
         liveUrl: 'https://weathercrodify.netlify.app/',
         githubUrl: 'https://github.com/Crodify/weather-dashboard',
-        featured: true,
+        featured: false,
         gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
     },
     {
@@ -122,15 +132,27 @@ export const projects = [
 
 export const experience = [
     {
-        role: 'Learning Frontend Development',
-        org: 'Scrimba',
-        period: '2024 — Present',
-        description: 'Completed multiple courses on HTML, CSS, JavaScript, and React. Built 12+ projects to practice skills.',
+        role: 'Web Development Intern',
+        org: 'Nexxoury Solutions',
+        period: 'Nov 2026 — Present',
+        description: 'Building responsive web interfaces, optimizing UI performance, and developing client-facing applications using modern frontend tools.',
     },
     {
-        role: 'Building Real Projects',
-        org: 'Self-taught',
-        period: '2024 — Present',
-        description: 'Applied learning by building real-world applications: weather apps, games, Chrome extensions, and more.',
+        role: 'Open Source Software Contributor',
+        org: 'GoodDollar, Algorand & Tenstorrent',
+        period: 'Oct 2026 — Present',
+        description: 'Authored 3 merged production security audit PRs on GoodDollar (antseed-integration) approved by founder @sirpy. Solved EIP-712 auth bypasses, GraphQL pagination limits, and micro-USD configs. Contributed 5+ SDK PRs to Algorand.',
+    },
+    {
+        role: 'Full-Stack Web Development Intern',
+        org: 'Elevance Skills',
+        period: 'Jul 2026 — Aug 2026',
+        description: 'Completed certified full-stack internship. Built and shipped Myntra Clone using React Native, Expo, and backend API integration.',
+    },
+    {
+        role: 'Frontend Development Career Path',
+        org: 'Scrimba',
+        period: 'Feb 2026 — Aug 2026',
+        description: 'Completed comprehensive course covering HTML, CSS, JavaScript, and React. Built 12+ projects to practice production-grade frontend engineering.',
     },
 ];
