@@ -85,6 +85,11 @@ export default function Projects() {
                                 <span className="project-icon">{project.icon}</span>
                                 <h3>{project.title}</h3>
                             </div>
+                            {project.status && (
+                                <div style={{ fontSize: '0.75rem', color: '#10b981', fontWeight: '600', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '4px' }}>
+                                    {project.status}
+                                </div>
+                            )}
                             <p className="project-desc">{project.description}</p>
                             <div className="tech-tags">
                                 {project.tech.map((t, i) => (
@@ -92,8 +97,14 @@ export default function Projects() {
                                 ))}
                             </div>
                             <div className="project-links">
-                                {project.live && <a href={project.live} target="_blank" rel="noreferrer">Live →</a>}
-                                {project.github && <a href={project.github} target="_blank" rel="noreferrer">GitHub →</a>}
+                                {project.live && (
+                                    <a href={project.live} target="_blank" rel="noreferrer">
+                                        {project.live.includes('/pull/') ? 'View Merged PR →' : 'Live →'}
+                                    </a>
+                                )}
+                                {project.github && !project.live?.includes('/pull/') && (
+                                    <a href={project.github} target="_blank" rel="noreferrer">GitHub →</a>
+                                )}
                             </div>
                         </div>
                     ))}
