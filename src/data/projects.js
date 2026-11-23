@@ -1,23 +1,46 @@
 export const projects = [
     {
-        id: 100,
-        title: 'GoodDollar Protocol Audit Fixes',
-        description: '3 security & architecture PRs merged into production by founder @sirpy on GoodDollar/antseed-integration: EIP-712 auth verification (#41), GraphQL keyset cursor pagination to bypass 5,000-entity cap (#40), and 6-decimal micro-USD precision (#36).',
-        tech: ['TypeScript', 'Cloudflare Workers', 'GraphQL', 'Web3', 'EVM'],
-        live: 'https://github.com/GoodDollar/antseed-integration/pull/36',
-        github: 'https://github.com/GoodDollar/antseed-integration/pulls?q=is%3Apr+author%3ACrodify',
-        featured: true,
-        icon: '🛡️'
-    },
-    {
         id: 0,
         title: 'BerserkLifts',
         description: 'Full-featured workout & habit tracker with RPG progression, cloud sync, XP system, leaderboards, and challenges. Built with React Native, Expo, TypeScript, Zustand, and Supabase.',
         tech: ['React Native', 'Expo', 'TypeScript', 'Zustand', 'Supabase', 'Node.js'],
         live: 'https://berserklifts.vercel.app',
         github: 'https://github.com/Crodify/BerserkLifts-workout-habit-tracker',
-        featured: false,
+        featured: true,
         icon: '⚔️'
+    },
+    {
+        id: 100,
+        title: 'GoodDollar Protocol Audit Fixes',
+        description: '3 security & architecture PRs merged into production by founder @sirpy on GoodDollar/antseed-integration: EIP-712 auth verification (#41), GraphQL keyset cursor pagination to bypass 5,000-entity cap (#40), and 6-decimal micro-USD precision (#36).',
+        tech: ['TypeScript', 'Cloudflare Workers', 'GraphQL', 'Web3', 'EVM'],
+        category: 'GitHub Contributions',
+        live: 'https://github.com/GoodDollar/antseed-integration/pull/36',
+        github: 'https://github.com/GoodDollar/antseed-integration/pulls?q=is%3Apr+author%3ACrodify',
+        featured: false,
+        icon: '🛡️'
+    },
+    {
+        id: 101,
+        title: 'Algorand Official SDKs & Tooling',
+        description: 'Authored 5+ pull requests across official Algorand SDKs (py-algorand-sdk, js-algorand-sdk, algokit-utils-py): added async algod endpoints, BigInt microalgo lossless precision, and deterministic resource ordering in composers.',
+        tech: ['Python', 'TypeScript', 'SDK', 'Algorand', 'Web3'],
+        category: 'GitHub Contributions',
+        live: 'https://github.com/algorand/js-algorand-sdk/pull/1151',
+        github: 'https://github.com/algorand/js-algorand-sdk/pulls?q=is%3Apr+author%3ACrodify',
+        featured: false,
+        icon: '⚡'
+    },
+    {
+        id: 102,
+        title: 'Tenstorrent Compiler Kernel Fixes',
+        description: 'Kernel and compiler operator optimizations in tt-metal (low-level kernel programming model): sharded scale_mask_softmax mask handling and offset core grids.',
+        tech: ['C++', 'Python', 'Compiler', 'Kernels', 'AI Acceleration'],
+        category: 'GitHub Contributions',
+        live: 'https://github.com/tenstorrent/tt-metal/pull/64659',
+        github: 'https://github.com/tenstorrent/tt-metal/pulls?q=is%3Apr+author%3ACrodify',
+        featured: false,
+        icon: '⚙️'
     },
     {
         id: 13,
